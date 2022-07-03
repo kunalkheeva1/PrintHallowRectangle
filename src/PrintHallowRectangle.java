@@ -2,11 +2,11 @@ public class PrintHallowRectangle {
     public static void printHallowRectangle(int row, int column){
 
         //get a nested loop
-        for(int i=0; i<=row; i++ ){
+        for(int i=0; i<row; i++ ){
             // one for the columns
-            for(int j=0; j<=column; j++){
+            for(int j=0; j<column; j++){
                 //print star on the borders
-                if(i==0|| j==0  || i==row || j==column ){
+                if(i==0|| j==0  || i==row-1 || j==column-1 ){
                     System.out.print(" *");
                     //else space in between
                 }else{
